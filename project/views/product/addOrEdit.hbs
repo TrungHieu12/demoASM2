@@ -1,0 +1,27 @@
+<h3>{{viewTitle}}</h3>
+
+<form action="/product" method="POST" autocomplete="off">
+    <input type="hidden" name="_id" value="{{product._id}}">
+    <div class="form-group">
+        <label>The name of the salesperson</label>
+        <input type="text" class="form-control" name="fullName" placeholder="The name of the salesperson" value="{{product.fullName}}">
+    </div>
+    <div class="form-group">
+        <label>Address of the store</label>
+        <input type="text" class="form-control" name="email" placeholder="Address of the store" value="{{product.email}}">
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Day-Month-Year</label>
+            <input type="text" class="form-control" name="mobile" placeholder="Day-Month-Year" value="{{product.mobile}}">
+        </div>
+        <div class="form-group col-md-6">
+            <label>Revenue</label>
+            <input type="text" class="form-control" name="city" placeholder="Revenue" value="{{product.city}}">
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Update</button>
+        <a class="btn btn-secondary" href="/product/list"><i class="fa fa-list-alt"></i> View All</a>
+    </div>
+</form>
